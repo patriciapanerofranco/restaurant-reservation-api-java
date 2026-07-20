@@ -55,6 +55,8 @@ build/
 application-local.properties
 application-local.yml
 
-# H2 local database files
+# Local H2 database files
+data/
+*.db
 *.mv.db
 *.trace.db
