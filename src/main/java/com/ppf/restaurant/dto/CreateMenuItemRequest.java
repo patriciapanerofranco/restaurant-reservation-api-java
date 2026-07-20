@@ -3,9 +3,11 @@ package com.ppf.restaurant.dto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
+import lombok.Getter;
 
 import java.math.BigDecimal;
 
+@Getter
 public class CreateMenuItemRequest {
 
     @NotBlank(message = "Name is required")
@@ -23,23 +25,4 @@ public class CreateMenuItemRequest {
     private Boolean active;
 
 
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public Boolean getActive() {
-        return active;
-    }
 }

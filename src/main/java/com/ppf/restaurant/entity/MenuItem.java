@@ -4,10 +4,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 
+@Getter
 @Entity
 public class MenuItem {
     @Id
@@ -40,30 +42,6 @@ public class MenuItem {
         this.price = price;
         this.category = category;
         this.active = active;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public Boolean getActive() {
-        return active;
     }
 
 }

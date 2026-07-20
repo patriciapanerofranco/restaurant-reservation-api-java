@@ -1,7 +1,10 @@
 package com.ppf.restaurant.dto;
 
+import lombok.Getter;
+
 import java.math.BigDecimal;
 
+@Getter
 public class MenuItemResponse {
 
     private Long id;
@@ -18,29 +21,5 @@ public class MenuItemResponse {
         this.price = price;
         this.category = category;
         this.active = active;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public Boolean getActive() {
-        return active;
     }
 }
