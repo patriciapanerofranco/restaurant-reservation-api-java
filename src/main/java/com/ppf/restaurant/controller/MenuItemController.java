@@ -38,7 +38,7 @@ public class MenuItemController {
     }
 
     @PutMapping("/{id}")
-    public MenuItemResponse updateMenuItem(@PathVariable Long id, @Valid UpdateMenuItemRequest request) {
+    public MenuItemResponse updateMenuItem(@PathVariable Long id, @Valid @RequestBody UpdateMenuItemRequest request) {
         return menuItemService.updateMenuItem(id, request);
     }
 
